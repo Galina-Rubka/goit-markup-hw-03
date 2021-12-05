@@ -62,6 +62,12 @@ body {
   background: #2f303a;
 }
 
+.background-desk-footer {
+  background: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+
 .head-button {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -187,6 +193,7 @@ body {
   font-family: Roboto;
   color: #212121;
   cursor: pointer;
+  padding: 6px 22px 6px 22px;
 }
 .btn:hover {
   text-decoration: none;
@@ -201,7 +208,7 @@ body {
 
 .btn-all {
   padding: 6px 22px 6px 22px;
-  background: #f5f4fa;
+  background: F5F4FA;
 }
 
 /* кнопка 2 */
@@ -214,6 +221,7 @@ body {
 .btn-web {
   padding: 6px 22px 6px 22px;
   background: #f5f4fa;
+  margin-left: 8px;
 }
 
 /* кнопка 3 */
@@ -226,6 +234,7 @@ body {
 .btn-game {
   padding: 6px 22px 6px 22px;
   background: #f5f4fa;
+  margin-left: 8px;
 }
 
 /* кнопка 4 */
@@ -238,6 +247,7 @@ body {
 .btn-design {
   padding: 6px 22px 6px 22px;
   background: #f5f4fa;
+  margin-left: 8px;
 }
 /* кнопка 5 */
 .btn-marketing:hover,
@@ -249,6 +259,7 @@ body {
 .btn-marketing {
   padding: 6px 22px 6px 22px;
   background: #f5f4fa;
+  margin-left: 8px;
 }
 /* button-portfolio! */
 
@@ -264,4 +275,36 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* ставим на места елементы */
+
+.container-item {
+  width: 1200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: chartreuse; */
+}
+
+.container-all {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+}
+
+.container-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.container-picture {
+  margin-right: 30px;
+}
+.container-picture:nth-child(3n) {
+  margin: 0;
 }
