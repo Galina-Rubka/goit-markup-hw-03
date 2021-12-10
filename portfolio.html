@@ -10,35 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./modern-normalize.css"/>
 </head>
 <body>
     <!-- Page header portfolio-->
         <header class="header-nav">
-            <nav class="nav-site">
-                <a href="/" class="name"><span class="name-web">Web</span>Studio</a>
-                <ul class="list-none">
-                    <li><a href="./index.html" class="nav-link">Студия</a></li>
-                    <li><a href="./portfolio.html"><span class="nav-link-portfolio">Портфолио</span></a></li>
-                    <li><a href="" class="nav-link">Контакты</a></li>
+            <div class="container-nav">
+                <nav class="nav-site">
+                    <a href="/" class="name"><span class="name-web">Web</span>Studio</a>
+                <ul class="ul-box list-none">
+                        <li class="nav-li"><a href="./index.html" class="nav-link">Студия</a></li>
+                        <li class="nav-li"><a href="./portfolio.html"><span class="nav-link-portfolio">Портфолио</span></a></li>
+                        <li class="nav-li"><a href="" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="nav-contact list-none">
+                    <li class="contact-li"><a href="mailto:info@devstudio.com" class="nav-contact-info">info@devstudio.com</a></li>
+                    <li class="contact-li"><a href="tel:+380961111111" class="nav-contact-info">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="nav-contact list-none">
-                <li><a href="mailto:info@devstudio.com" class="nav-contact-info">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="nav-contact-info">+380961111111</a></li>
-            </ul>
+            </div>
         </header>
     <main>
         <!-- Section main -->
             <div class="container-item">
                     <div class="container-btn">
                         <ul class="list-none btn container-all">
-                            <li><button type="button" class="btn btn-all">Все</button></li>
-                            <li><button type="button" class="btn btn-web">Веб-сайти</button></li>
-                            <li><button type="button" class="btn btn-game">Приложения</button></li>
-                            <li><button type="button" class="btn btn-design">Дизайн</button></li>
-                            <li><button type="button" class="btn btn-marketing">Маркетинг</button></li>
+                            <li class="btn"><button type="button" class="btn-all">Все</button></li>
+                            <li class="btn"><button type="button" class="btn-all">Веб-сайти</button></li>
+                            <li class="btn"><button type="button" class="btn-all">Приложения</button></li>
+                            <li class="btn"><button type="button" class="btn-all">Дизайн</button></li>
+                            <li class="btn"><button type="button" class="btn-all">Маркетинг</button></li>
                         </ul>
                     </div>
+            </div>
                 <section>
                     <div class="container-all">
                         <ul class="list-none container-all">
@@ -88,15 +92,11 @@
                                 <p class="second-name-picture">Приложение</p>
                             </li>
                         </ul>
-                
-                </div>
-            </div>
-
-             
-        </section>
+                    </div>
+                </section>
     </main>
     <!-- Footer-adress -->
-    <footer class="footer background-desk-footer">
+    <footer class="footer-adress background-desk">
         <a href="/" class="name"><span class="name-web">Web</span><span class="studio">Studio</span>
         </a>
         <address>
@@ -107,6 +107,7 @@
             </ul>
         </address>
     </footer>
+
 
 </body>
 </html>
