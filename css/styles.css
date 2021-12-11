@@ -4,6 +4,7 @@
 
   --text-primary: #212121;
   --text-primary-second: #757575;
+  --container-set: 30px;
 }
 
 body {
@@ -98,8 +99,8 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-left: 700px;
-
+  margin: 0 auto;
+  display: flex;
   color: #ffffff;
 }
 .heading {
@@ -111,8 +112,8 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   width: 696px;
-  margin: 0, auto;
-  margin-left: 467px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .paragraph-name {
@@ -134,6 +135,8 @@ img {
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .second-heading {
@@ -143,14 +146,13 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .our-command {
-  padding-top: 135px;
-  padding-bottom: 50px;
+  margin: 0px 0px;
 }
 .user {
   font-weight: 500;
@@ -159,7 +161,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 30px;
   margin-top: 0px;
 }
 
@@ -168,8 +169,6 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
-
   margin: 0px 0px;
   color: #757575;
 }
@@ -184,6 +183,8 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
   color: #ffffff;
+  margin: 0px 0px;
+  padding-bottom: 9px;
 }
 
 .footer-contact {
@@ -193,6 +194,10 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.push:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* !!!!!! page two Portfolio !!!!!!*/
@@ -250,6 +255,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .second-name-picture {
@@ -257,6 +263,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0px;
 }
 
 /* ставим на места елементы */
@@ -318,6 +325,7 @@ img {
 }
 .paragraph-work {
   width: 270px;
+  margin: 0px 0px;
 }
 .image-work {
   padding-top: 94px;
@@ -338,7 +346,6 @@ img {
 
 .workers {
   display: flex;
-  margin-bottom: 94px;
 }
 .people-box:not(:last-child) {
   margin-right: 30px;
@@ -354,13 +361,26 @@ img {
   background-color: var(--primary-background-color);
 }
 
+.people {
+  padding: 30px 0px 30px 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /* 2 page */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container-item {
-  width: 1200px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 94px;
-  margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -378,13 +398,46 @@ img {
   margin-bottom: 34px;
 }
 
-.container-picture {
-  margin-right: 30px;
+/* с репетой */
+
+.container-set {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+
+  margin-top: calc(-1 * var(--container-set));
+  margin-left: calc(-1 * var(--container-set));
 }
-.container-picture:nth-child(3n) {
-  margin: 0;
+.container-set > .container-picture {
+  flex-basis: calc(100% / 3 - var(--container-set));
+
+  margin-left: var(--container-set);
+  margin-top: var(--container-set);
+}
+.text-box {
+  padding: 20px 24px 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+/* с репетой */
+
+.name-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-adress {
   text-decoration: none;
-  padding: 60px 215px;
+  padding: 60px 0px;
 }
