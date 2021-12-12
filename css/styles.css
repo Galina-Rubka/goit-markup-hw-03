@@ -113,7 +113,7 @@ img {
   color: #ffffff;
   width: 696px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .paragraph-name {
@@ -122,7 +122,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-bottom: 10px;
   color: #212121;
 }
 
@@ -132,6 +132,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0px;
 }
 
 .team {
@@ -184,7 +185,7 @@ img {
   font-style: normal;
   color: #ffffff;
   margin: 0px 0px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -325,7 +326,7 @@ img {
 }
 .paragraph-work {
   width: 270px;
-  margin: 0px 0px;
+  margin: 0px;
 }
 .image-work {
   padding-top: 94px;
@@ -386,9 +387,9 @@ h6 {
 }
 
 .container-all {
-  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .container-btn {
